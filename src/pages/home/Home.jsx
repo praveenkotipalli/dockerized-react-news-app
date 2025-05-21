@@ -10,7 +10,7 @@ import ChangeTheme from '../../components/theme/ChangeTheme';
 const Home = () => {
     const [news,setNews]=useState([]);
     const [loading,setLoading]=useState(false);
-    const apiKey=process.env.REACT_APP_API_KEY;
+    const apiKey="6e7c0ea2136d4b61801e57f64b730673";
     const url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
     // useEffect(() => {
     //   fetch(url)
