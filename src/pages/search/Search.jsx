@@ -6,7 +6,7 @@ const Search = () => {
     const [news,setNews]=useState("");
     const {state}=useLocation();
     console.log(state);
-    const apiKey=process.env.REACT_APP_API_KEY;
+    const apiKey="6e7c0ea2136d4b61801e57f64b730673";
     const url=`https://newsapi.org/v2/top-headlines?q=${state}&apiKey=${apiKey}`;
     useEffect(() => {
         fetch(url)
