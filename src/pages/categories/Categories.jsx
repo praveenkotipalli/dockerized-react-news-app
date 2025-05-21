@@ -14,7 +14,7 @@ const Categories = () => {
     const {state} =useLocation();
     console.log(state.category);
 
-    const apiKey=process.env.REACT_APP_API_KEY;
+    const apiKey="6e7c0ea2136d4b61801e57f64b730673";
     const url=`https://newsapi.org/v2/top-headlines?country=us&category=${state.category}&apiKey=${apiKey}`;
     const filterUrl=`https://newsapi.org/v2/top-headlines?country=${filter}&category=${state.category}&apiKey=${apiKey}`;
 
